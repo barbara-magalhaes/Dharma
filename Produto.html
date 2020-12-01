@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Vegan Food</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="scritp.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src='https://unpkg.com/vue'></script>
+    <meta charset="utf-8" />
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        body {
+            margin: 0px;
+            position: 40%;
+            background-size: 70%;
+        }
+        
+        nav {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            position: fixed;
+            background-color: #339933;
+            z-index: 99;
+            text-align: center;
+            top: 0%;
+            box-shadow: 2px 0px 2px 3px #d1d1e0;
+        }
+        
+        ul {
+            font-size: 12px;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            padding-top: 2%;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            transition: 0.5s;
+        }
+        
+        .Food {
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            color: white;
+            position: absolute;
+            margin-left: 2%;
+            margin-top: 1%;
+        }
+        
+        .humus {
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            color: #339933;
+            position: absolute;
+            margin-left: 2%;
+            margin-top: 8%;
+        }
+        
+        .carrinho {
+            color: #fff;
+            position: fixed;
+            left: 95%;
+            top: 3%;
+            font-size: 28px;
+        }
+        
+        img {
+            box-shadow: 2px 2px 4px 2px#d1d1e0;
+            margin-top: 15%;
+            margin-left: 2%;
+            width: 35%;
+        }
+        
+        .conteudo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
+            position: fixed;
+            margin-left: 46%;
+            margin-top: -24%;
+        }
+        
+        button {
+            font-family: 'Roboto', sans-serif;
+            font-size: 10px;
+            text-align: center;
+            border-radius: 5px;
+            width: 150px;
+            height: 60px;
+            box-shadow: 2px 2px 3px 2px #d1d1e0;
+            border-color: transparent;
+            background-color: #339933;
+            color: white;
+            font-weight: bolder;
+            font-size: 17px;
+            margin-top: 2%;
+            margin-left: 2%;
+        }
+        
+        button>i {
+            font-size: 45px;
+            margin-left: -50%;
+            margin-top: 5%;
+        }
+        
+        button>p {
+            margin-top: -20%;
+            margin-left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="#app">
+
+        <nav>
+            <label class="Food">Vegan Food</label>
+            <ul>
+                <li><a href=""><label class="arial">PARA FAZER</label></a></li>
+                <li><a href=""><label class="arial">PRONTO</label></a></li>
+            </ul>
+            <i class="material-icons carrinho">shopping_cart</i>
+        </nav>
+        <p class="humus">Húmus</p>
+
+        <img src="https://i2.wp.com/www.eatthis.com/wp-content/uploads/2018/11/hummus-healthy-snack-food-with-pita-bread.jpg?w=1000&ssl=1 " alt="">
+
+
+        <div class="conteudo">
+            <p>Kit completo para você preparar em casa, além da receita e o passo a passo. Assim é so comprar e preparar.</p>
+            <p><b>Porção:</b> 8 pessoas</p>
+            <br>
+            <p style="color: #339933; ">R$ 36,90</p>
+            <br>
+            <p style="font-size: 20px"><i>Disponível 6 kits no estoque</i></p>
+        </div>
+
+        <button type="submit"><i class="material-icons">add_shopping_cart</i><p>Comprar</p></button>
+
+</body>
+
+</html>
